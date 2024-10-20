@@ -1,0 +1,67 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Home",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "pages-home"
+    },
+    {
+      "name": "Master",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "master",
+      "submenu": [
+        {
+          "url": "/staffs",
+          "icon": "menu-icon tf-icons bx bx-file",
+          "name": "Staff",
+          "slug": "staffs"
+        },
+        {
+          "url": "/roles",
+          "icon": "menu-icon tf-icons bx bx-file",
+          "name": "Roles",
+          "slug": "roles"
+        },
+        {
+          "url": "/species",
+          "icon": "menu-icon tf-icons bx bx-error",
+          "name": "Species",
+          "slug": "pages-species"
+        },
+        {
+          "url": "/strains",
+          "name": "Strains",
+          "icon": "menu-icon tf-icons bx bx-log-in",
+          "slug": "pages-strains"
+        }
+      ]
+    },
+    {
+      "name": "Breeding",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "breeding",
+      "submenu": [
+        {
+          "url": "/rooms",
+          "icon": "menu-icon tf-icons bx bx-file",
+          "name": "Animal Rooms",
+          "slug": "rooms"
+        },
+        {
+          "url": "/breeding",
+          "icon": "menu-icon tf-icons bx bx-file",
+          "name": "Animal Breeding",
+          "slug": "breeding"
+        }
+      ]
+    },
+    {
+      "url": "/auth/register-basic",
+      "name": "Register",
+      "icon": "menu-icon tf-icons bx bx-user",
+      "slug": "auth-register-basic",
+      "target": "_blank"
+    }
+  ]
+}
