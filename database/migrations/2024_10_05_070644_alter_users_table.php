@@ -15,7 +15,7 @@ return new class extends Migration
             $table->unsignedBigInteger('role_id')->nullable()->after('password');
             $table->foreign('role_id')->references('id')->on('roles');
             $table->string('designation',250)->after('role_id');
-            $table->string('employee_code',250)->after('degination');
+            $table->string('employee_code',250)->after('designation');
             $table->string('department',250)->after('employee_code');
             $table->string('extension_no',250)->nullable()->after('department');
             $table->string('mobile_no',20)->nullable()->after('extension_no');
@@ -33,7 +33,7 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('role_id');
-            $table->dropColumn('degination');
+            $table->dropColumn('designation');
             $table->dropColumn('employee_code');
             $table->dropColumn('department');
             $table->dropColumn('extension_no');
